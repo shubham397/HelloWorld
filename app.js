@@ -1,8 +1,8 @@
 const express = require('express');
 
 const app = express();
-app.get('/where', (req, res) => {
-    res.sendStatus(500);
+app.get('/', (req, res) => {
+    res.send("HELLO WORLD");
 });
 
 app.listen(3000, () => {
